@@ -28,8 +28,8 @@ def sendFile(pathFile, conn):
         while (data):
             conn.send(data)
             # data = sf.read(1024)
-            # print ('Sent', repr(data))
             data = sf.read(1024)
+            # print('Sent')
     sf.close()
 
 try:
